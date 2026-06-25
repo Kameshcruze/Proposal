@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-handwriting: "Allura", cursive;
+  --font-love: "Allura", cursive;
+  
+  --color-brand-pink: #FFD6E8;
+  --color-brand-rosegold: #C98B8B;
+  --color-brand-lavender: #EADCF8;
+  --color-brand-burgundy: #8B1E3F;
+  --color-brand-gold: #F4C542;
+  --color-brand-dark: #0a0a0a;
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for clean cinematic look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-dark); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-rosegold); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-pink); 
+}
